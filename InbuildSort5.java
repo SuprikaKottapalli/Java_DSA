@@ -20,18 +20,24 @@ public class InbuildSort5 {
         Arrays.sort(arr,Collections.reverseOrder());//this works on objects
         PrintArrayCollection(arr);
 
+        System.out.print("Sorting Array Decending Order using collections and without indexes: ");
+        Arrays.sort(arr,0,3,Collections.reverseOrder());
+        PrintArrayCollection(arr);
+
    }
-     public static void PrintArray(int array[]){
+    public static void PrintArray(int array[]){
         for (int i = 0; i < array.length; i++) {
             System.out.print(array[i]+" ");
         }
         System.out.println();
     }
 
-     public static void PrintArrayCollection(Integer arr[]){
+    public static void PrintArrayCollection(Integer arr[]){
         for (int i = 0; i < arr.length; i++) {
             System.out.print(arr[i]+" ");
         }
         System.out.println();
     }
+
+
 }
