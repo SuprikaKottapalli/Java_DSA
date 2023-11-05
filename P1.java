@@ -1,18 +1,16 @@
+import java.util.*;
+
 public class P1 {
-    public static void Num(int matrix[][],int key){
-        int counter = 0;
-        for (int i = 0; i < matrix.length; i++) {
-            for (int j = 0; j < matrix[i].length; j++) {
-                if(matrix[i][j]==key){
-                    counter++;
-                }
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        String str = sc.next();
+        int count = 0;
+        for(int i = 0 ; i< str.length(); i++){
+            char ch = str.charAt(i);
+            if(ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u'){
+                count++;
             }
         }
-        System.out.println(counter);
-    }
-    public static void main(String[] args) {
-        int matrix[][] = {{4,7,8},{8,8,7}};
-        int key = 8;
-        Num(matrix, key);
+        System.out.println("The num of vowels are: "+count);
     }
 }
